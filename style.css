@@ -1,0 +1,186 @@
+/* General Reset and Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Layout Containers */
+header,
+section,
+footer {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+header {
+    background: #6c63ff;
+    color: white;
+    text-align: center;
+}
+
+#course-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#course-details p {
+    margin: 5px 0;
+}
+
+#enroll-btn {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#enroll-btn:hover {
+    background-color: #e65a5a;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Video List Section */
+#video-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+#video-list li {
+    margin: 10px 0;
+    padding: 15px;
+    background: #eef;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#video-list li p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Video Player Section */
+#video-player iframe {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+#video-summary {
+    background: #f9f9f9;
+    border-left: 4px solid #6c63ff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Notes and Tools Section */
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: none;
+    margin: 10px 0;
+}
+
+#save-notes {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#save-notes:hover {
+    background-color: #5753d9;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+#ai-questions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#ai-questions li {
+    margin: 5px 0;
+    padding: 8px;
+    background: #f4f4f4;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+/* Footer Section */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 10px;
+}
+
+#progress-tracker {
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+progress {
+    width: 100%;
+    height: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+    appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background: #e0e0e0;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background: #6c63ff;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header,
+    section,
+    footer {
+        padding: 15px;
+        margin: 5px;
+    }
+
+    #youtube-player {
+        width: 100%;
+        height: auto;
+    }
+
+    #course-details {
+        text-align: center;
+    }
+
+    #enroll-btn {
+        width: 100%;
+    }
+}

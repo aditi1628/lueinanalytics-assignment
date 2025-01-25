@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <title>Skill Course Detail Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Course Overview Section-->
+    <header>
+      <h1 id="course-title">C Programming</h1>
+      <div id="course-details">
+        <p><strong>Skill Level:</strong>Beginner</p>
+        <p><strong>Duration:</strong>5 hours</p>
+        <p><strong>Total Videos:</strong>10</p>
+        <p><strong>Rating:</strong> ⭐⭐⭐⭐ 4.5/5</p>
+        <button id="enroll-btn">Enroll Now</button>
+      </div>
+    </header>
+
+    <!--Video List Section -->
+    <section id="video-list">
+      <h2>Course Videos</h2>
+      <ul id="videos">
+        <!--videos will be dynamically added here-->
+      </ul>
+    </section>
+
+    <!--Video Player Section-->
+    <section id="video-player">
+      <h2>Video Player</h2>
+      <iframe
+        id="youtube-player"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/KnvbUiSxvbM?si=iqcclj_JxSRRZCqR"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <div id="video-summary">
+        <h3>AI-Generated Summary:</h3>
+        <p>
+          In this video, we will introduce you to the exciting world of C
+          programming. We will see why C is a good choice for beginners to start
+          their programming journey. Then, we will create our first C program.
+        </p>
+      </div>
+    </section>
+
+    <!--Notes and Tools Section-->
+    <section id="notes-tools">
+      <h2>Notes and Tools</h2>
+      <textarea
+        id="custom-notes"
+        placeholder="Add your notes here..."
+      ></textarea>
+      <button id="save-notes">Save Notes</button>
+      <div id="ai-questions">
+        <h3>AI Generated Questions:</h3>
+        <ul>
+          <li>Question 1: [Sample Question]</li>
+          <li>Question 2: [Sample Question]</li>
+        </ul>
+      </div>
+    </section>
+
+    <!--Additional Features-->
+    <footer>
+      <div id="progress-tracker">
+        <p>Course Progress: <span id="progress">0%</span></p>
+        <progress value="0" max="100"></progress>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
